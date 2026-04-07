@@ -1,11 +1,9 @@
-version: '3.8'
-
 services:
   jupyter:
     image: jupyter/pyspark-notebook
+    container_name: pyspark-jupyter
     ports:
       - "8888:8888"
-    environment:
-      - JUPYTER_ENABLE_LAB=yes
     volumes:
-      - ./notebooks:/home/jovyan/work
+      - ./:/home/jovyan/work
+    working_dir: /home/jovyan/work
