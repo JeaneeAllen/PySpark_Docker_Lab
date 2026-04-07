@@ -1,0 +1,17 @@
+notes.md
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+
+# Mac
+.DS_Store
+
+# Logs
+*.log
